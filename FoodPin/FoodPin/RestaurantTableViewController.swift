@@ -18,7 +18,7 @@ class RestaurantTableViewController: UITableViewController {
 */
     var restaurants = [
     Restaurant(name: "咖啡胡同", type: "咖啡&茶店", location: "香港", image: "cafedeadend.jpg", isVisited: false) ,
-    Restaurant(name: "霍米", type: "咖啡", location: "香港", image: "homei.jpg", isVisited: false) ,
+    Restaurant(name: "霍米", type: "咖啡", location: "香港上环文咸东街太平山22-24A,B店", image: "homei.jpg", isVisited: false) ,
     Restaurant(name: "茶.家", type: "茶屋", location: "香港", image: "teakha.jpg", isVisited: false) ,
     Restaurant(name: "洛伊斯咖啡", type: "奥地利式&休闲饮料", location: "香港", image: "cafeloisl.jpg", isVisited: false) ,
     Restaurant(name: "贝蒂生蚝", type: "法式", location: "香港", image: "petiteoyster.jpg", isVisited: false) ,
@@ -42,12 +42,9 @@ class RestaurantTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {

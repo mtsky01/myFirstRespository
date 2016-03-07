@@ -15,7 +15,6 @@ class RestaurantDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         restaurantImageView.image = UIImage(named: restaurant.image)
-
         // Do any additional setup after loading the view.
     }
 

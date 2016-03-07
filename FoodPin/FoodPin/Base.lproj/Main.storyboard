@@ -78,7 +78,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oTL-kL-nHS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oTL-kL-nHS">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                             </imageView>
                         </subviews>
@@ -118,17 +118,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="35.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iE6-jI-Vxx">
-                                            <rect key="frame" x="8" y="9" width="584" height="21"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iE6-jI-Vxx">
+                                            <rect key="frame" x="8" y="8" width="584" height="19.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="261" verticalHuggingPriority="251" text="字段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7n-Hg-sYb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="195" height="21"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="194.5" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cK-jQ-X6R">
-                                                    <rect key="frame" x="195" y="0.0" width="390" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="值" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cK-jQ-X6R">
+                                                    <rect key="frame" x="194.5" y="0.0" width="389.5" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -142,7 +142,9 @@
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="iE6-jI-Vxx" secondAttribute="trailing" id="7A6-xq-1yW"/>
                                         <constraint firstItem="iE6-jI-Vxx" firstAttribute="centerY" secondItem="9Zi-fb-dde" secondAttribute="centerY" id="7Hd-ph-lAE"/>
+                                        <constraint firstItem="iE6-jI-Vxx" firstAttribute="top" secondItem="9Zi-fb-dde" secondAttribute="topMargin" id="aYK-h9-RdC"/>
                                         <constraint firstItem="iE6-jI-Vxx" firstAttribute="leading" secondItem="9Zi-fb-dde" secondAttribute="leadingMargin" id="gAo-gk-j9v"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="iE6-jI-Vxx" secondAttribute="bottom" id="n9N-go-KJN"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -167,7 +169,7 @@
         <!--Navigation Controller-->
         <scene sceneID="UbH-JC-dsU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dO6-ai-fgq" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnSwipe="YES" id="dO6-ai-fgq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DTf-La-hiQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

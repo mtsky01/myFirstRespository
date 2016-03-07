@@ -15,7 +15,14 @@ class DetailTableViewController: UITableViewController {
     @IBOutlet weak var imageView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        tableView.backgroundColor = UIColor(white: 0.98, alpha: 1)
+        tableView.tableFooterView = UIView(frame: CGRectZero)
+        tableView.separatorColor = UIColor(white: 0.9, alpha: 1)
+        title = restaurant.name
         
+        tableView.estimatedRowHeight = 36
+        tableView.rowHeight = UITableViewAutomaticDimension
         //imageView.image = UIImage(named: restaurant.image)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -23,6 +30,10 @@ class DetailTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+   /* override func viewDidAppear(animated: Bool) {
+        self.navigationController?.navigationBar.barStyle = .Black
+    }
+*/
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -62,7 +73,7 @@ class DetailTableViewController: UITableViewController {
             cell.fieldLabel.text = ""
             cell.valueLabel.text = ""
         }
-
+        cell.backgroundColor = UIColor.clearColor()
         // Configure the cell...
 
         return cell
